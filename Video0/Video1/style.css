@@ -1,0 +1,97 @@
+/* cascading stylesheets */
+
+/* selector  (q es lo q queremos cambiar){
+    propiedad (altura, tamaño,color,etc): valor;
+} */
+
+/* TIPOS DE SELECTOR */
+
+/* Universal (Todo sale ese color) *{
+    color: blueviolet;
+}*/
+
+/* De tipo (solo lo q se pone p, button) h2{
+    color: blueviolet;
+}*/
+
+/* Por clase (solo los q se llama asi class="Moustro") .Moustro{
+    color: blueviolet;
+}*/
+
+/* Por id (Tiene q ser unico, tiene mas rango de especificidad id="Casita") #Casita{
+    color: blueviolet;
+}*/
+
+/* Por atributo (rancho="Oky doki") [rancho="Oky doki"]{
+    color: blueviolet;
+}*/
+
+/* Descendiente (si esta el p dentro del h2) h2 p{
+    color: blueviolet;
+}*/
+
+/* Por pseudo-clases (se pone de color cuando se pone el mouse encima) strike:hover{
+    color: blueviolet;
+}*/
+
+
+/* ESPECIFICIDAD Hay captura*/
+.FotoSi{
+    color: brown !important;   /*  No se puede cambiar, le gana a todo*/
+}
+
+
+/* METODOLOGIA BEM */
+.Formulario__input:first-child{   /*  Para q solo sea el 1ro */
+    color: palevioletred;
+}
+.Formulario__input--active{    /* Con la clase active */
+    color: palevioletred;
+}
+
+
+/* TERORIA DE LAS MEDIDAS */ /* Propiedad que trabaje con unidades de medidas */
+/* UNIDADES DE MEDIDAS */ /* Tipografia */
+
+/* Relativas depende de algo (son variables)*/
+.Perrito{ /* Caja contenedora */
+    font-size: 30px ; /* Tamaño de la letra */
+    background-color: blue; 
+    width: 50vw; /* viuporwidth (largo)*/
+    height: 100vh; /* viuporheight */
+    /* Cuando ponemos % es el porcentaje de la caja que lo contiene */
+}
+/* Fijas (pixeles"px",milimetros"mm",puntos "pt",cm) CADA LETRA*/
+/* 1 em son 16 pixeles SE PUEDE CAMBIAR SI SE PONE EN LA CAJA CONTENEDORA*/
+.Perrito__h2{
+    font-size: 1em ; 
+}
+
+
+/* PROPIEDADES DE TEXTO*/
+.Escritorio{
+    font-size: 25px ;
+}
+.Escritorio__h2{
+    font-size: 3em ;
+    font-size: Georgia ; /* Tipografia Hay captura*/
+    line-height: 1.9; /* nace del centro de la letra, si es uno entonces es 0.5 pa arriba y otro 0.5 pa abajo */ 
+    font-weight: 100; /* Grosor */
+    color: wheat;
+}
+
+
+/* Normalize */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* TEORIA DE CAJAS */
+/* Tipo*/
+
+/* En lineas (Va a tener el tamaño del contenido )*/
+
+/* En bloques (por defecto van a tener el ancho total de la caja)*/

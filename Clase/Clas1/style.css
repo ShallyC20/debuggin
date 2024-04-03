@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    height: 100px;
+}
+header{
+    color:aqua;
+    background-color:rgb(pink, orange, white);
+}
+.heder{
+    height: 100px;
+}

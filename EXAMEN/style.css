@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+  }
+
+  .notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #303030;
+    padding: 28px;
+    border-radius: 12px;
+    width: 300px; /* Ancho del rectángulo */
+    height: 152px;
+    gap: 12px;
+    top: -372px;
+    left: -635px;
+  }
+
+  .message-count {
+    width: 156px;
+    height: 40px;
+    size: 34px;
+    line-height: 40px;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .message-text {
+    width: 156px;
+    height: 24px;
+    size: 24px;
+    line-height: 40px;
+    color: #ffffff80;
+    font-family: "Montserrat", sans-serif;
+
+  }
+
+  .porcentaje {
+    width: 53px;
+    height: 16px;
+    gap: 2px;
+  }
+
+  .since {
+    width: 179px;
+    height: 15px;
+    gap: 2px;
+    font-family: "Montserrat", sans-serif;
+    size: 12px;
+    line-height: 14.63px;
+    color: #ffffff60;
+  }
+
+  .logo {
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    border-radius: 50%;
+    padding: 11px;
+    gap: 10px;
+  }

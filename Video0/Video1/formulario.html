@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <!-- entrada de datos -->
+        <p>
+            <!-- name usamos en lenguaje de backend identificar -->
+            <input type=" " name="nombre ">
+            <!-- required completar si o si el campo -->
+            <input type="text" required="">
+        </p>
+        
+        <button style="color: aqua">Nombre completo</button>  <!--estilo en linea -->
+        <input type="text" value="Hello"> 
+
+        <button>Contraseña</button>
+        <input type="password">
+
+        <!-- METODOLOGIA BEM Comienza -->
+        <div class="Formulario">
+            <input type=" number" class="Formulario__input"> <!-- Poner del contenedor, dos guiones bajos,el nombre del elemneto -->
+            <input type=" number" class="Formulario__input">
+
+            <input type="email" class="Formulario__input--active">
+            <input type="email" class="Formulario__input">
+
+            <input type="color" class="Formulario__input">
+
+            <input type="range" min="10" max="100">
+
+            <input type="date"class="Formulario__input">
+
+            <input type="time">
+        </div>
+        
+        <div class="Gatito">
+            <p class="Gatito__p">
+                <h3 class="Gatito__p-h3">
+                    Feliz jueves
+                </h3>
+                <!-- value Es siempre lo que nos va a devolver ese input -->
+                <input type="button" value="Boton">
+            </p>
+        </div>
+        <!-- METODOLOGIA BEM Termina -->
+
+        
+        <input type="submit">
+
+        <!-- Procesamiento -->
+
+        <!-- Respuesta -->
+    </form>
+
+    <!-- Metodos -->
+    <form method="post">
+        <!-- readonly solo se puede leer -->
+        <textarea readonly="">
+
+        </textarea>
+    </form>
+
+    <form method="get">
+
+    </form>
+</body>
+</html>
